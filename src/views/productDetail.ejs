@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('./partials/headParam') %>
+
+    <body>
+        <% if(username != null){ %>
+            <%- include ('./partials/headerLoggedInParam') %>
+                <% } else{ %>
+                    <%- include ('./partials/headerParam') %>
+                        <% } %>
+
+
+                            <div class="breadcrumb-section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="width-100">
+                                            <nav aria-label="breadcrumb">
+                                                <ol class="breadcrumb">
+                                                    <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
+                                                    <li class="breadcrumb-item"><a href="#">Tienda</a></li>
+                                                    <li class="breadcrumb-item active" aria-current="page">Detalle</li>
+                                                </ol>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <section id="product-detail" class="bg-white section-padding-0-50 ">
+                                <div class="container">
+                                    <% if(products.length == 1){ %>
+                                        <div class="row justify-content-between">
+
+                                            <div class="product-detail-image">
+                                                <div class="product-image">
+                                                    <div class="carousel-item">
+                                                        <a class="product-img" href="../<%= products[0].imgSrc %>" title="Product Image">
+                                                            <img class="d-block w-100" src="../<%= products[0].imgSrc %>" alt="1">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-detail-info">
+                                                <h4 class="title">
+                                                    <%= products[0].name %>
+                                                </h4>
+                                                <h4 class="price">$
+                                                    <%= products[0].price %>
+                                                </h4>
+                                                <div class="description">
+                                                    <p>
+                                                        <%= products[0].detail %>
+                                                    </p>
+                                                </div>
+                                                <div class="cart align-items-center">
+                                                    <div class="quantity">
+                                                        <span class="quantity-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        <input type="text" class="quantity-text" id="qty" step="1" min="1" max="12" name="quantity" value="1">
+                                                        <span class="quantity-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <button type="button" class="btn ml-50">Agregar</button>
+                                                </div>
+                                            </div>
+
+
+
+
+
+                                        </div>
+                                        <% } else{ %>
+                                            <%- include ('./productNotFound') %>
+                                                <% } %>
+                                </div>
+                            </section>
+
+
+                            <%- include ('./partials/footerParam') %>
+
+
+                                <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </body>
+
+</html>

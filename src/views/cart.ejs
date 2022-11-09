@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('./partials/head') %>
+
+    <body>
+        <% if(username != ""){ %>
+            <%- include ('./partials/headerLoggedIn') %>
+                <% } else{ %>
+                    <%- include ('./partials/header') %>
+                        <% } %>
+
+
+                            <div class="breadcrumb-section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="width-100">
+                                            <nav aria-label="breadcrumb">
+                                                <ol class="breadcrumb">
+                                                    <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
+                                                    <li class="breadcrumb-item active" aria-current="page">Carrito</li>
+                                                </ol>
+                                            </nav>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <section id="cart" class="bg-white section-padding-50 ">
+                                <div class="container">
+
+                                    <div class="row justify-content-between">
+                                        <div class="width-100">
+                                            <table class="cart-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Producto</th>
+                                                        <th>Cantidad</th>
+                                                        <th>Precio</th>
+                                                        <th>Total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="cart_product_img">
+                                                            <a href="#"><img src="images/product_mini_1.png" alt="product_1"></a>
+                                                            <h5>Termo</h5>
+                                                        </td>
+                                                        <td>
+                                                            <div class="quantity">
+                                                                <span class="qty-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                                <input type="text" class="qty-text" value="1">
+                                                                <span class="qty-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td>$99.99</td>
+                                                        <td>$99.99</td>
+                                                        <td><i class="fa-solid fa-x icon_close"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cart_product_img">
+                                                            <a href="#"><img src="images/product_mini_3.png" alt="product_3"></a>
+                                                            <h5>Mate Camionero</h5>
+                                                        </td>
+                                                        <td>
+                                                            <div class="quantity">
+                                                                <span class="qty-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                                <input type="text" class="qty-text" value="1">
+                                                                <span class="qty-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td>$99.99</td>
+                                                        <td>$99.99</td>
+                                                        <td><i class="fa-solid fa-x icon_close"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="section-cart-total" class="bg-white section-padding-0-50">
+                                <div class="container">
+
+                                    <div class="row justify-content-between">
+                                        <div class="coupon-discount">
+                                            <h5>CUPÓN DE DESCUENTO</h5>
+                                            <form>
+                                                <input type="text" name="coupon-code" placeholder="Ingresar código de cupón">
+                                                <button type="submit">APLICAR</button>
+                                            </form>
+                                        </div>
+
+                                        <div class="cart-total">
+                                            <h5>Total Carrito</h5>
+                                            <div class="subtotal justify-content-between">
+                                                <h5>Subtotal</h5>
+                                                <h5>$99.99</h5>
+                                            </div>
+                                            <div class="total justify-content-between">
+                                                <h5>Total</h5>
+                                                <h5>$99.99</h5>
+                                            </div>
+                                            <div class="mt-15">
+                                                <a href="#" class="btn w-100">FINALIZAR COMPRA</a>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <%- include ('./partials/footer') %>
+
+
+                                <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </body>
+
+</html>

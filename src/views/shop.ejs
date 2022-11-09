@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('./partials/head') %>
+
+    <body>
+        <% if(username != ""){ %>
+            <%- include ('./partials/headerLoggedIn') %>
+                <% } else{ %>
+                    <%- include ('./partials/header') %>
+                        <% } %>
+
+
+                            <div class="breadcrumb-section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="width-100">
+                                            <nav aria-label="breadcrumb">
+                                                <ol class="breadcrumb">
+                                                    <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
+                                                    <li class="breadcrumb-item active" aria-current="page">Tienda</li>
+                                                </ol>
+                                            </nav>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <section class="shop-section bg-white section-padding-0-50 ">
+                                <div class="container ">
+                                    <div class="row justify-content-between ">
+                                        <% for (let i = 0; i < products.length; i++) { %>
+                                            <div class="single-product ">
+                                                <div class="product-img ">
+                                                    <a href="/productDetail/<%= products[i].id %>"><img src="<%= products[i].imgSrc %>" alt=" "></a>
+                                                    <!-- Product Tag -->
+                                                    <div class="product-tag ">
+                                                        <a href="# ">Hot</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <a href="/productDetail/<%= products[i].id %>">
+                                                        <p>
+                                                            <%= products[i].name %>
+                                                        </p>
+                                                    </a>
+                                                    <h6>$
+                                                        <%= products[i].price %>
+                                                    </h6>
+                                                </div>
+                                                <div class="product-options">
+                                                    <a href="/productDetail/<%= products[i].id %>" class="btn">Ver</a>
+                                                    <a href="#" class="btn">Agregar</a>
+                                                </div>
+                                            </div>
+                                            <% } %>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                            <%- include ('./partials/footer') %>
+
+
+                                <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </body>
+
+</html>

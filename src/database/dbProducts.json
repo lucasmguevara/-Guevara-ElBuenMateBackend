@@ -1,0 +1,61 @@
+[{
+        "id": 1,
+        "name": "Termo Stanley Termo Clásico 1.4 LTS",
+        "detail": "este termo Stanley fue pensado para acompañarte a través de los años, ya que durabilidad y estilo son las palabras que definen a la marca. Gracias a su resistencia, obtendrás un gran rendimiento térmico y garantizarás que el líquido permanezca con la temperatura ideal por más tiempo.",
+        "price": 18.999,
+        "category": "termos",
+        "isNew": true,
+        "isSale": false,
+        "imgSrc": "images/shopProducts/1.png"
+    },
+    {
+        "id": 2,
+        "name": "Termo Stanley Termo Clásico 1.4 LTS",
+        "detail": "este termo Stanley fue pensado para acompañarte a través de los años, ya que durabilidad y estilo son las palabras que definen a la marca. Gracias a su resistencia, obtendrás un gran rendimiento térmico y garantizarás que el líquido permanezca con la temperatura ideal por más tiempo.",
+        "price": 18.999,
+        "category": "termos",
+        "isNew": false,
+        "isSale": false,
+        "imgSrc": "images/shopProducts/2.png"
+    },
+    {
+        "id": 3,
+        "name": "Mate Uruguayo Camionero Boca Ancha",
+        "detail": "Mate Camionero hechos en Cuero Vacuno de 4mm, excelente calidad y durabilidad.",
+        "price": 4.223,
+        "category": "mates",
+        "isNew": false,
+        "isSale": false,
+        "imgSrc": "images/shopProducts/3.png"
+    },
+    {
+        "id": 4,
+        "name": "Bombilla Pico De Loro De Alpaca",
+        "detail": "BOMBILLA PICO DE LORO DE ALPACA BRASILERA BI COLOR. FABRICADA EN PLATEADO Y DORADO. NO SE TAPA. EXCELENTE CALIDAD.",
+        "price": 1.059,
+        "category": "bombillas",
+        "isNew": false,
+        "isSale": false,
+        "imgSrc": "images/shopProducts/4.png"
+    },
+    {
+        "id": 5,
+        "name": "Yerba Mate Playadito 1000grs Suave Sin Tacc",
+        "detail": "Elaborada con palo y libre de gluten, se caracteriza por su delicioso sabor suave. Recomendado para quienes toman mate con frecuencia y prefieren sabores suaves y duraderos.",
+        "price": 695,
+        "category": "yerba mate",
+        "isNew": false,
+        "isSale": false,
+        "imgSrc": "images/shopProducts/5.png"
+    },
+    {
+        "id": 6,
+        "name": "Yerba Canarias Para Mate Sabor Tradicional 1 Kg ",
+        "detail": "Se compone principalmente de polvo con hojas muy pequeñas y cortadas, sin tallos (sin palo). Su sabor es fuerte y amargo, y su textura casi cremosa. ",
+        "price": 100000,
+        "category": "yerba mate",
+        "isNew": false,
+        "isSale": true,
+        "imgSrc": "images/shopProducts/6.png"
+    }
+]

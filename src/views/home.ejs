@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('./partials/head') %>
+
+    <body>
+        <% if(username != ""){ %>
+            <%- include ('./partials/headerLoggedIn') %>
+                <% } else{ %>
+                    <%- include ('./partials/header') %>
+                        <% } %>
+
+                            <section id="banner" class="banner-section">
+                                <img src="./images/banner_1.png">
+                            </section>
+
+                            <section id="about-us" class="bg-gray section-padding-1">
+                                <div class="container">
+                                    <div class="section-heading text-center">
+                                        <h2>SOBRE NOSOTROS</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos adipisci itaque quos. Perferendis, ex distinctio tempora expedita illo, iste aut animi accusamus, voluptate ratione tempore ab optio aliquid
+                                            reiciendis dolorum.</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="our-services" class="bg-white section-padding-1">
+                                <div class="container">
+                                    <div class="section-heading text-center">
+                                        <h2>Nuestros Servicios</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos adipisci itaque quos. Perferendis, ex distinctio tempora expedita illo, iste aut animi accusamus, voluptate ratione tempore ab optio aliquid
+                                            reiciendis dolorum.</p>
+                                    </div>
+
+                                    <div class="services">
+                                        <div class="description-services">
+                                            <div class="item-service align-items-center">
+                                                <div class=" service-icon">
+                                                    <img src="images/mate_icon.png" alt=" ">
+                                                </div>
+
+                                                <div class="description ">
+                                                    <h2>Mates</h2>
+                                                    <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat sodales.service its.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-service align-items-center">
+                                                <div class="service-icon">
+                                                    <img src="images/termo_icon.png" alt=" ">
+                                                </div>
+
+                                                <div class="description ">
+                                                    <h2>Termos</h2>
+                                                    <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat sodales.service its.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-service align-items-center">
+                                                <div class=" service-icon">
+                                                    <img src="images/rama_icon.png" alt=" ">
+                                                </div>
+
+                                                <div class="description ">
+                                                    <h2>Yerba Mate</h2>
+                                                    <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat sodales.service its.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-service align-items-center">
+                                                <div class=" service-icon">
+                                                    <img src="images/articulo_icon.png" alt=" ">
+                                                </div>
+
+                                                <div class="description ">
+                                                    <h2>Blog Matero</h2>
+                                                    <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat sodales.service its.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="description-services text-end">
+                                            <img src="images/mate_servicios.png" alt=" " class="img-service" width="500">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="news" class="bg-gray section-padding-1">
+                                <div class="container">
+                                    <div class="section-heading text-center">
+                                        <h2>Novedades</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="news">
+                                        <div class="news-product mb-50">
+                                            <div class="product-img">
+                                                <a href="#"><img src="images/product_1.png" alt=""></a>
+                                                <div class="product-tag">
+                                                    <a href="#">Oferta</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-info text-center">
+                                                <a href="#">
+                                                    <p>Termo</p>
+                                                </a>
+                                                <h6>$10.99</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="news-product mb-50">
+                                            <div class="product-img">
+                                                <a href="#"><img src="images/product_2.png" alt=""></a>
+                                            </div>
+                                            <div class="product-info text-center">
+                                                <a href="#">
+                                                    <p>Yerba Mate Taragüi</p>
+                                                </a>
+                                                <h6>$10.99</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="news-product mb-50">
+                                            <div class="product-img">
+                                                <a href="#"><img src="images/product_3.png" alt=""></a>
+                                            </div>
+                                            <div class="product-info text-center">
+                                                <a href="#">
+                                                    <p>Mate Camionero</p>
+                                                </a>
+                                                <h6>$10.99</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="news-product mb-50">
+                                            <div class="product-img">
+                                                <a href="#"><img src="images/product_4.png" alt=""></a>
+                                            </div>
+                                            <div class="product-info text-center">
+                                                <a href="#">
+                                                    <p>Bombilla Pico de Loro</p>
+                                                </a>
+                                                <h6>$10.99</h6>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div class="width-100 text-center">
+                                        <a href="#" class="btn">Ver Todos</a>
+                                    </div>
+
+                                </div>
+                            </section>
+
+
+                            <%- include ('./partials/footer') %>
+
+    </body>
+
+</html>
